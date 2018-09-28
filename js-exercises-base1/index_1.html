@@ -1,0 +1,57 @@
+<html>
+   <head>
+    <script src="script.js" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+ </head>
+   <body 
+   onload="fNum(tonNombre)"
+   >
+
+    <p id=""></p>
+      <script type="text/javascript">
+      
+     //Exercice 1
+      var age = 23;
+        alert("Ma variable age " + age);
+      //Exercice 2
+      var monNom = "Doe";
+      var monPrenom = "John";
+      var maVille = "New-York";
+        alert("\n Nom: "+ monNom +"\n Prénom: "+ monPrenom  +
+      "\n Ville: " + maVille);
+      //Exercice 3
+      var tonPrenom = prompt("Quel est ton prénom ?", "<Votre prénom>");
+        alert("Bonjour " + tonPrenom + ".");
+      //Exercice 4
+      var tonNom = prompt("Quel est votre nom ?", "<Votre nom>");
+      var tonPrenom = prompt("Quel est votre prénom ?", "<Votre prénom>");
+      var taVille = prompt("Quelle est votre ville ?", "<Votre ville>");
+
+        alert("Bonjour " + tonNom + " " + tonPrenom + " de " + taVille + "!");
+      //Exercice 5
+      var tonNombre = prompt("Ecrivez-vous deux nombres decimal", "<Votre nombre>");
+        var munNum = parseInt(tonNombre); 
+        alert("Ton numero entier fois 5 est: "+ munNum*5);
+
+     //Exercice 7
+      var taPointure = prompt("Quel est votre pointure ?", "<Votre pointure>");
+      var tonAge = prompt("Quel est votre age ?", "<Votre age>");
+      var tonResultat = ((((parseFloat(taPointure)*2)+5)*50) - parseFloat(tonAge)) + 1766; 
+     // var tonResultat = (parseFloat(tonPointure)*2); 
+        alert(tonResultat);
+      //Exercice 8
+      var votreAge = prompt("Quel est votre age ?", "<Votre age>");  
+      if (votreAge >= 18){
+        
+        alert(" Vous êtes majeur!");
+      }    
+      else{
+        alert(" Vous êtes mineur ");
+      }
+
+
+
+
+</script>
+
+   </body>
+</html> 
