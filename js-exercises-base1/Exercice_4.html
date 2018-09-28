@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+            <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+            <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+            <button  name="valider" id="valider" onclick="myFunction()" >Valider</button>
+        <p id="demo"><a href="#"></a></p>
+    </form>
+        
+        
+    </body>
+</html>
+
+<script type="text/javascript">
+
+ 
+   
+ alert("Bonjour voulez inserer votre Nom, Prenom et Ville");
+ function myFunction() { 
+    var tonNom = document.getElementById('nom').value;
+    var tonPrenom = document.getElementById('prenom').value;
+    var taVille = document.getElementById('ville').value;
+ 
+      alert("Bonjour " + tonNom + " " + tonPrenom + " de " + taVille + "!");
+    
+
+}
+</script>
+
+   </body>
+</html> 
