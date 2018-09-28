@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="mon_div">
+
+        </div>
+        <form>
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="valider" name ="valider" onclick="myFunction()">Valider</button>
+        </form>
+    </body>
+</html>
+
+<script type="text/javascript"> 
+    document.getElementById('mon_div').innerHTML = 'Ecrivez-vous deux nombres decimal';  
+    
+    function myFunction() { 
+        var munNum = document.getElementById('premier_nombre').value;
+        var munPrem = parseInt(munNum);
+        
+    alert("Ton numero entier fois 5 est: " + munPrem*5);  
+}
+</script>
+
+   </body>
+</html> 
