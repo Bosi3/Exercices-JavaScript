@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="mon_div"></div>
+        <form>
+            <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+            <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+            <button id="valider" name="valider" onclick=" myFunction();">Valider</button>
+        </form>
+
+        <script type="text/javascript"> 
+        document.getElementById('mon_div').innerHTML = 'Quel est votre pointure ? Et votre annee de naissance ?';  
+        function myFunction(){
+        var taPointure = document.getElementById('pointure').value;
+        var taP = parseInt(taPointure);
+        var tonAge = document.getElementById('annee').value;
+        var tonA = parseInt(tonAge);
+        var tonResultat = ((((taP*2)+5)*50)- tonA) + 1766; 
+        
+        alert('ton resultat est ' + tonResultat);
+          }
+        </script>
+    </body>
+</html>
