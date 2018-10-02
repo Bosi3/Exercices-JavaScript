@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //EXERCICE MATHS 1 
+        var petit = Math.min(7, 5, -12, 6, 32, 18, 14, -2);
+        console.log(petit);
+
+        var grand = Math.max(-3, 9, 21, 36, 27, 54, 17, 35);
+        console.log(grand);
+
+        var add = petit + grand;
+        console.log(add);
+
+        //EXERCICE MATHS 2
+
+        var floatBateau = parseFloat(10.4);
+        var couleBateau = Math.floor(floatBateau); //arrondie vers le bas
+        var voleBateau = Math.ceil(floatBateau); //arrondie vers le haut
+        console.log(floatBateau + " " + couleBateau + " " + voleBateau);
+
+        //EXERCICE MATHS 3
+
+        var ale = Math.floor(Math.random() * 100) + 50;
+        var aleZ = Math.random();
+        var aleDix = Math.floor(Math.random() * 11);
+        console.log(ale + " " + aleZ + " " + aleDix);
+
+        //EXERCICE MATHS 4
+
+        let names = ["Goro", "Johnny Cage", "Kano", "Liu Kang", "Raiden", "Reptile", "Scorpion", "Shang Tsung", "Sonya", "Sub-Zero"];
+        var rand = names[Math.floor(names.length * Math.random())];
+        console.log(rand);
+
+    </script>
+
+</body>
+
+</html>

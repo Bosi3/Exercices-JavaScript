@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //EXERCICE OBJETS 1 
+
+        let Character = {
+            name: "Toto",
+            age: 4,
+            items_to_give: ["pizza", "mozzarella", "pastiera"],
+            for(key in Character) {
+                // console.log(Object.keys(object1));
+                console.log(Character[key]);
+        };
+        giveItem: function () {
+            var rand = this.items_to_give[Math.floor(Math.random() * (this.items_to_give.length))];
+            // names[Math.floor(names.length * Math.random())];
+            console.log(rand);
+        }
+        };
+        Character.giveItem();
+        //EXERCICE OBJETS 2
+
+        var obj = [
+            {
+                title: "épée",
+                physic: 2,
+                magic: 3,
+                minLevel: 7,
+                available: true
+            },
+            {
+                title: "hache",
+                physic: 5,
+                magic: 6,
+                minLevel: 4,
+                available: false
+            },
+            {
+                title: "sceptre",
+                physic: 8,
+                magic: 10,
+                minLevel: 6,
+                available: true
+            },
+        ]
+        function affiche() {
+            for (value in obj)
+                console.log(obj[value]); { }
+        }
+        affiche();
+        function dispo() {
+            for (key in obj) {
+                if (obj[key].available == true) {
+                    console.log(obj[key].title);
+                }
+            }
+        }
+        dispo();
+        //EXERCICE OBJETS 3 
+        let weapon = {};
+        let mainCharacter = {
+            name: "Tom",
+            level: 4,
+            life: 2,
+            weapon: {
+                name: "la corde",
+                damage: 2
+            },
+            attack: function () {
+                this.name = mainCharacter.name;
+                this.named = mainCharacter.weapon.name;
+                this.level = mainCharacter.level;
+                this.damage = mainCharacter.weapon.damage;
+                console.log(this.name + " attaque avec " + this.named + " et les dégâts sont " + this.level * this.damage);
+            }
+        };
+        mainCharacter.attack();
+
+        myObjet.dispo();
+        //EXERCICE OBJETS 4
+        let weapon = {};
+        let character = {
+            name: "Tom",
+            level: 4,
+            life: 2,
+            weapon: {
+                name: "la corde",
+                damage: 2
+            },
+            attack: function () {
+                this.name = character.name;
+                this.named = character.weapon.name;
+                this.level = character.level;
+                this.damage = character.weapon.damage;
+                console.log(this.name + " attaque avec " + this.named + " et les dégâts sont " + this.level * this.damage);
+            },
+            receiveDamage: function () {
+
+            },
+
+        };
+        character.attack();
+        let opponentCharacter = Object.create(character);
+        opponentCharacter.name = "Jhones";
+        opponentCharacter.level = 3;
+        opponentCharacter.life = 5;
+        opponentCharacter.weapon.name = "le poignard";
+        opponentCharacter.weapon.damage = 6;
+        let mainCharacter = Object.create(character);
+        console.log(mainCharacter.name);
+        console.log(opponentCharacter);
+        console.log(character.name + " attaque " + opponentCharacter.name + '\n' +
+            " avec " + mainCharacter.weapon.name + '\n' +
+            " et lui inflige " + (mainCharacter.level * mainCharacter.weapon.damage) + " de dégats " + '\n' +
+            opponentCharacter.name + " à maintenant " + (opponentCharacter.life - mainCharacter.weapon.damage) + " de vie ");
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        
+        //EXERCICE BOUCLES 1 
+
+        //alert("bonjour");
+        var i;
+        for (var i = 0; i < 21; i++) {
+            if ((i % 2) == 0) {
+                var nombre = "pair";
+            } else {
+                var nombre = "impair";
+            }
+            console.log("Le nombre " + i + " est " + nombre);
+        }
+
+        //EXERCICE BOUCLES 2
+
+        var i = 0;
+        while (i < 10) {
+            i = i + 1;
+            var n = 9
+            var t = i * n;
+            console.log(i + " * " + n + " = " + t);
+        }
+
+        //EXERCICE BOUCLES 3
+
+        var i = 0;
+        while (i < 100) {
+            i = i + 1;
+            var score;
+            if (i >= 90) {
+                score = "le grade A";
+            } else if (i >= 80 && i <= 89) {
+                score = "le grade B";
+            } else if (i >= 70 && i <= 79) {
+                score = "le grade C";
+            } else if (i >= 65 && i <= 69) {
+                score = "le grade D";
+            } else {
+                score = "le grade F";
+            }
+            console.log("Pour " + i + " points vous avez " + score);
+        }
+
+        //EXERCICE BOUCLES 4
+        var n = "*";
+        for (i = 0; i < 5; i++) {
+            if (i == 0) {
+                n = n;
+            } else {
+                n = n + "*";
+            }
+            console.log(n);
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        alert("Calculez votre division:");
+        var a = prompt("Introduisez  le numérateur.");
+        var b= prompt("Introduisez  le dénumérateur.");
+        function division(a, b) {
+            return a / b;   
+        }
+        alert("Le resultat de votre division est " + division(a, b));
+
+        alert("Calculez votre multiplication:")
+        var a = prompt("Introduisez  le multiplicande.");
+        var b= prompt("Introduisez  le multiplicateur.");
+        function multiplications(a, b) {
+            return a * b;   
+        }
+        alert("Le resultat de votre multiplication est " + multiplications(a, b));
+
+
+        alert("Calculez votre pourcentage:")
+        var valeur = prompt("Introduisez  une valeur.");
+        var pourcentage= prompt("Introduisez  le pourcentage que vous voulez appliquer.");
+        function pourcentages(valeur, pourcentage) {
+            return (valeur / 100 * pourcentage);   
+        }
+        alert("Le pourcentage du votre nombre est " + pourcentages(valeur, pourcentage));
+        
+
+
+        alert("Calculez votre velocité km/h:")
+        var distance = prompt("Introduisez une distance en km que vous voulez calculer.");
+        var tempH = prompt("Introduisez temps en heure que vous voulez calculer.");
+        function vitesse(distance, tempH) {
+            return (distance / tempH);   
+        }
+        alert("Le calcul que vous avez demandé est " + vitesse(distance, tempH)+ "km/h");
+        
+    </script>
+
+</body>
+
+</html>

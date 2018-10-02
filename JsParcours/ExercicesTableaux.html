@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //EXERCICE TABLEAUX 1 
+
+        let nombre = [1, 2, 3, 4, 5, 6, 7, 8, "a"];
+        var n = nombre.length;
+        var tot = 0;
+        for (let i = 0; i < n; i++) {
+            tot += nombre[i];
+
+            console.log(tot);
+        }
+
+        //EXERCICE TABLEAUX 2
+
+        let acteur = ["Luchini", "Auteuil", "Trintignant"];
+        var a = acteur.length;
+        var i = 0;
+        /*while (i < a) {
+            i = i + 1;
+            console.log("Le numero " + i +  " est " + acteur[i-1]);
+        }*/
+        while (i < a) {
+            if (i == 0) {
+                var numeration = "Le premier";
+            } else if (i == 1) {
+                var numeration = "Le deuxième";
+            } else {
+                var numeration = "Le troisième";
+            }
+            i = i + 1;
+
+            console.log(numeration + " est " + acteur[i - 1]);
+        }
+        //EXERCICE TABLEAUX 3
+        let tab = ["Mario", "Luigi", "Peach"];
+        let tabN = tab.slice();
+        tabN.push("Bowser");
+        
+        console.log(tabN);
+
+    </script>
+
+</body>
+
+</html>

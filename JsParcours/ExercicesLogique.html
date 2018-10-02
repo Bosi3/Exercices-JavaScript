@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //EXERCICE LOGIQUE 1 
+    
+        var lang = prompt('Bonjour specifier une langue en deux lettre', "< ex: fr, es ou en>" );
+        if (lang == "fr") {
+          alert("Bonjour tout le monde");
+        } else if (lang == "es") {
+            alert("Hola, Mundo");
+        } else {
+            alert("Hello world");
+        } 
+       
+        //EXERCICE LOGIQUE 2
+        var score = prompt("Inserez votre score.");
+        var resultat;
+        if (score >= 90) {
+            resultat = "Vous avez le rang A";
+            alert(resultat);
+        } else if (score >= 51 && score < 90) {
+            resultat = "Vous avez le rang B";
+            alert(resultat);
+        } else {
+            resultat = "Vous avez le rang C";
+            alert(resultat);
+        }
+         
+        //EXERCICE LOGIQUE 3
+        
+        var mot = prompt("Quel objet desirez-vou?", "< Introduisez le mot." );
+        var nombre = prompt("Combien voulez-vous en avoir?", "<Introduisez un nombre.>");
+        var risultaT;
+        
+        if (nombre == 1 )  {
+            risultaT = mot;
+            //alert(risultaT);
+        } else if  (nombre !==1 && mot.endsWith("s") || mot.endsWith("x") || mot.endsWith("z")) {
+            risultaT = mot;
+            //alert(risultaT);
+        } else if (nombre !==1 && mot.endsWith("eu") || mot.endsWith("au") || mot.endsWith("eau") || mot.endsWith("ou")) {
+            risultaT = mot +"x";
+           // alert(risultaT);
+        } else if (nombre !==1 && mot.endsWith("al"))  {
+            risultaT = mot.slice(0, -1) +"ux" ;
+            //alert(risultaT);
+        }
+        else {
+            risultaT = mot + "s";
+            //alert(risultaT);
+        }
+        alert("Voulez-vous vraiment " + nombre +" " + risultaT + "?");
+
+    </script>
+
+</body>
+
+</html>
