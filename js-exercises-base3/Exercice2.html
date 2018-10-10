@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 2</title>
+</head>
+
+<body>
+    <form>
+        <label for="nom">Votre nom : </label><input type="text" name="nom" value="" id="nom" onfocus="foc()" />
+    </form>
+    <script>
+        document.getElementById("nom").addEventListener("focus", foc);
+
+        function foc() {
+            alert("Merci de votre participation");
+        }
+      /*Dans le fichier HTML fourni, afficher une boite de dialogue avec le message
+       : "Merci de votre participation" quand le champ de saisie perd le focus.*/
+    </script>
+</body>
+
+</html>
