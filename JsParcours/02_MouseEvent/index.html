@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	div{
+		padding-top: 30px;
+	}
+	</style>
+</head>
+<body class="bg-aqua" onclick="showCoords(event)">
+	
+<main class="container">
+<div class="hoverMe"  onmouseover="mouseOver()" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+<div class="hoverMe"  onmouseover="mouseOver()">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+<div class="hoverMe"  onmouseover="mouseOver()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+<div id= "reset"  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+<div id= "axe-x"  >Lorem ipsum dolor sit amet. </div>
+<div id= "axe-y"  >Lorem ipsum dolor sit amet. </div>
+		
+</main>
+
+<script >
+	//Exercices 1
+	const hme = document.querySelectorAll('.hoverMe');
+	
+	function mouseOver() {
+		hme.forEach(hme => {
+			hme.style.visibility = "hidden";
+		});
+}
+//Exercices 2
+document.getElementById("reset").addEventListener("click", reset);
+
+function reset() {
+	
+		hme.forEach(hme => {
+			hme.style.visibility = "visible";
+		});
+}
+//Exercices 3
+
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coordsx = "X coords: " + x ;
+    document.getElementById("axe-x").innerHTML =  coordsx;
+		var coordsy = "Y coords: " + y;
+    document.getElementById("axe-y").innerHTML = coordsy;
+}
+
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body class="bg-aqua">
+
+    <main class="container">
+
+        <div id="character">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div id="up">UP</div>
+        <div id="down">DOWN</div>
+        <div id="left">LEFT</div>
+        <div id="right">RIGHT</div>
+
+    </main>
+
+    <script>
+        //Exercices 1
+        /* document.getElementById("demo").addEventListener("keypress", myFunction);
+ 
+ function myFunction() {
+     document.getElementById("demo").style.backgroundColor = "red";
+     */
+        /* window.addEventListener("keydown", checkKeyPressed, false);
+      
+     function checkKeyPressed(e) {
+         if (e.keyCode == "65") {
+             alert("The 'a' key is pressed.");
+         }
+     }
+     
+     window.addEventListener("keydown", moveSomething, false);
+      
+     function moveSomething(e) {
+         switch(e.keyCode) {
+             case 37:
+                 // left key pressed
+                 break;
+             case 38:
+                 // up key pressed
+                 break;
+             case 39:
+                 // right key pressed
+                 break;
+             case 40:
+                 // down key pressed
+                 break;  
+         }   
+     }
+     */
+        //var handleKey = function (event) {
+        // Faire quelque chose!
+        //var cameleon = document.getElementById("character");// On cible la div créée en html à partir de son ID avec la méthode document.getElementById("Id)
+        //console.log (cameleon); // on vérifie que la div a été correctement ciblée. La console affiche bien <div id="character"></div>
+
+
+
+        let text = "";
+
+        /*window.addEventListener("keydown", moveSomething, false);
+ 
+function moveSomething(e) {
+    switch(e.keyCode) {
+        case 37:
+            document.onkeydown = function(event) {
+        switch (event.keyCode) {
+           case 37:
+                alert('Left key pressed');
+              break;
+           case 38:
+                alert('Up key pressed');
+              break;
+           case 39:
+                alert('Right key pressed');
+              break;
+           case 40:
+                alert('Down key pressed');
+              break;
+        }
+    };*/
+
+        let char = document.getElementById("character");
+        console.log(char);
+        //let change_color = function (event) {
+        window.addEventListener('keypress', function (event) {
+            //switch (event.keyCode) {
+            //document.onkeydown = function (event) {
+                let color = "";
+                switch (event.charCode || event.keyCode) {
+                    case 48:
+                    alert('si');
+                        //color = "red";
+                        break;
+                    case 49:
+                        color = "green";
+                        break;
+                    case 50:
+                        color = "pinck";
+                        break;
+                    case 51:
+                        color = "brown";
+                        break;
+                    case 52:
+                        color = "yellow";
+                        break;
+                    case 53:
+                        color = "red";
+                        break;
+                    case 54:
+                        color = "red";
+                        break;
+                    case 55:
+                        color = "red";
+                        break;
+                    case 56:
+                        color = "red";
+                        break;
+                    case 57:
+                        color = "blue";
+                        break;
+                    default:
+                        text = "I have never heard ...";
+
+
+                }
+            char.style.background = color;
+                console.log(color);
+}, false);
+            
+                
+            
+        
+            //window.addEventListener("keydown", document.onkeydown, false);
+        //window.addEventListener('keydown', change_color);
+
+//window.addEventListener ('keydown', handleKey);
+/*function greeting(name) {
+  alert('Bonjour ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Entrez votre nom.');
+  callback(name);
+}
+
+processUserInput(greeting);*/
+	/*
+    var handleKey = function (event) { 48 57
+    96 105
+    // Faire quelque chose!
+};
+
+window.addEventListener ('keydown', handleKey);
+keydown
+keypress
+keyup
+    <div class="hoverMe"  onmouseover="mouseOver()" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+<div class="hoverMe"  onmouseover="mouseOver()">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+<div class="hoverMe"  onmouseover="mouseOver()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+    Exercice 1
+Créer (en HTML) une DIV avec l'id "character"
+Faire changer la couleur de fond de la DIVà chaque fois que l'on appuie sur une touche numérique de 0 à 9 sur le clavier
+Tip : utiliser le switch
+
+Exercice 2
+Créer (en HTML) 4 div avec les id suivantes : "up, down, left, right"
+Créer une class 'highlight' dans le CSS qui réduit l'opacité de l'élément
+Pour chaque div ajouter la classe 'highlight' quand une des touches directionnelles est enfoncée
+Pour chaque div retirer la classe 'highlight' quand on relâche la touche
+Tip : Faire la structure HTML sans JavaScriptconst hme = document.querySelectorAll('.hoverMe');
+	
+	function mouseOver() {
+		hme.forEach(hme => {
+			hme.style.visibility = "hidden";
+		});
+}*/
+//Exercices 2
+/*document.getElementById("reset").addEventListener("click", reset);
+
+function reset() {
+	
+		hme.forEach(hme => {
+			hme.style.visibility = "visible";
+		});
+}
+//Exercices 3
+
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coordsx = "X coords: " + x ;
+    document.getElementById("axe-x").innerHTML =  coordsx;
+		var coordsy = "Y coords: " + y;
+    document.getElementById("axe-y").innerHTML = coordsy;
+}*/
+
+    </script>
+
+</body>
+
+</html>
