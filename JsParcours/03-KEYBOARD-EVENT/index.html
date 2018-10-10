@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
     <style>
         div {
             padding-top: 30px;
+        }
+
+        .highlight {
+            opacity: 0.5;
+            background-color: blueviolet;
         }
     </style>
 </head>
@@ -25,8 +30,115 @@
     </main>
 
     <script>
+  //EXERCICE 2
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+        var left = document.getElementById("left");
+        var right = document.getElementById("right");
+
+        var ajoute = function (event) {
+            switch (event.key) {
+                case "ArrowUp":
+                    console.log("ArrowUp");
+                    up.setAttribute("class", "highlight");
+                    break;
+                case "ArrowDown":
+                    console.log("ArrowDown");
+                    // down.setAttribute("class", "highlight");
+                    down.classList.add('highlight');
+                    break;
+                case "ArrowLeft":
+                    console.log("ArrowLeft");
+                    left.setAttribute("class", "highlight");
+                    break;
+                case "ArrowRight":
+                    console.log("ArrowRight");
+                    right.setAttribute("class", "highlight");
+                    break;
+            }
+        };
+
+        var leve = function (event) {
+            switch (event.key) {
+                case "ArrowUp":
+                    console.log("ArrowUp");
+                    up.classList.remove("highlight");
+                    break;
+                case "ArrowDown":
+                    console.log("ArrowDown");
+                    down.classList.remove("highlight");
+                    break;
+                case "ArrowLeft":
+                    console.log("ArrowLeft");
+                    left.classList.remove("highlight");
+                case "ArrowRight":
+                    console.log("ArrowRight");
+                    right.classList.remove("highlight");
+                    break;
+            }
+        };
+        window.addEventListener("keydown", ajoute);
+        window.addEventListener("keyup", leve);
         //Exercices 1
-        /* document.getElementById("demo").addEventListener("keypress", myFunction);
+
+       /* let char = document.getElementById("character");
+        console.log(char);
+        window.addEventListener('keypress', function (event) {
+            let color = "";
+            let text = "";
+            switch (event.charCode || event.keyCode) {
+
+                case 48:
+                    //alert('si');
+                    color = "red";
+                    break;
+                case 49:
+                    color = "green";
+                    break;
+                case 50:
+                    color = "pink";
+                    break;
+                case 51:
+                    color = "brown";
+                    break;
+                case 52:
+                    color = "GreenYellow ";
+                    break;
+                case 53:
+                    color = "Aqua";
+                    break;
+                case 54:
+                    color = "Crimson";
+                    break;
+                case 55:
+                    color = "DarkCyan";
+                    break;
+                case 56:
+                    color = "DarkGoldenRod";
+                    break;
+                case 57:
+                    color = "MediumSlateBlue";
+                    break;
+                default:
+                    text = "I have never heard ...";
+
+
+            }
+            char.style.background = color;
+            //console.log(color);
+        }, false);*/
+
+
+
+
+
+
+
+/*Créer une class 'highlight' dans le CSS qui réduit l'opacité de l'élément
+Pour chaque div ajouter la classe 'highlight' quand une des touches directionnelles est enfoncée
+Pour chaque div retirer la classe 'highlight' quand on relâche la touche
+Tip : Faire la structure HTML sans JavaScript
+  /* document.getElementById("demo").addEventListener("keypress", myFunction);
  
  function myFunction() {
      document.getElementById("demo").style.backgroundColor = "red";
@@ -65,7 +177,7 @@
 
 
 
-        let text = "";
+
 
         /*window.addEventListener("keydown", moveSomething, false);
  
@@ -87,64 +199,9 @@ function moveSomething(e) {
                 alert('Down key pressed');
               break;
         }
-    };*/
+    };
 
-        let char = document.getElementById("character");
-        console.log(char);
-        //let change_color = function (event) {
-        window.addEventListener('keypress', function (event) {
-            //switch (event.keyCode) {
-            //document.onkeydown = function (event) {
-                let color = "";
-                switch (event.charCode || event.keyCode) {
-                    case 48:
-                    alert('si');
-                        //color = "red";
-                        break;
-                    case 49:
-                        color = "green";
-                        break;
-                    case 50:
-                        color = "pinck";
-                        break;
-                    case 51:
-                        color = "brown";
-                        break;
-                    case 52:
-                        color = "yellow";
-                        break;
-                    case 53:
-                        color = "red";
-                        break;
-                    case 54:
-                        color = "red";
-                        break;
-                    case 55:
-                        color = "red";
-                        break;
-                    case 56:
-                        color = "red";
-                        break;
-                    case 57:
-                        color = "blue";
-                        break;
-                    default:
-                        text = "I have never heard ...";
-
-
-                }
-            char.style.background = color;
-                console.log(color);
-}, false);
-            
-                
-            
-        
-            //window.addEventListener("keydown", document.onkeydown, false);
-        //window.addEventListener('keydown', change_color);
-
-//window.addEventListener ('keydown', handleKey);
-/*function greeting(name) {
+function greeting(name) {
   alert('Bonjour ' + name);
 }
 
