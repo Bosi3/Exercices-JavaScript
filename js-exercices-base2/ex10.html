@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn1" type="submit" onclick=" somme()" ;>test somme</button>
+    <div id="mon_div" class="rectangle">
+    </div>
+    <p id="summe"></p>
+    <script type="text/javascript">
+
+        //Exercice 10 - utilisation de la boucle for
+
+        function somme() {
+           
+                let maA = parseFloat(prompt("introduisez un nombre"));
+                let maB = parseFloat(prompt("introduisez un autre nombre"));
+                let maC = parseFloat(prompt("introduisez encore un nombre"));
+                let arr = [maA, maB, maC];
+                let sum = 0;
+                for (i in arr) {
+                    sum += arr[i]; 
+                    //let suM = sum += arr[i];
+                    document.getElementById("summe").innerHTML = sum;
+                    
+                }
+               
+        };
+
+    </script>
+
+</body>
+
+</html>

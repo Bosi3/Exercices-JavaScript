@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin: 30px; 
+     }
+   
+ </style>
+
+<body>
+    <button class="btn1" type="submit" onclick=" faireChoix()" ;>Faites votre choix</button>
+    <div id="mon_div" class="rectangle">
+    </div>
+    <p id=""></p>
+    <script type="text/javascript">
+
+        //Exercice 7 - utilisation de switch
+
+        function faireChoix() {
+            var maChoix = prompt(" Choisissez-vous entre 1, 2 ou 3!");
+            if (maChoix == 1) {
+                alert("1. Merci");
+            } else if (maChoix == 2) {
+                alert("2. Bonjour");
+            } else if (maChoix == 3) {
+                alert("3. Au revoir");
+            } else {
+                alert("Pardon, que voulez-vous ?");
+            }
+
+        };
+
+    </script>
+
+</body>
+
+</html>

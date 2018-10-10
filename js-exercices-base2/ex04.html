@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin: 30px; 
+     }
+   
+ </style>
+
+<body>
+    <button class="btn1" type="submit" onclick=" affiche()" ;>le résultat de additionne</button>
+    <div id="mon_div" class="rectangle">
+    </div>
+    <p id=""></p>
+    <script type="text/javascript">
+
+        //Exercice 4 - utilisation d'un tableau
+
+        let tab = [-2, 1, 4];
+        var firstItem = tab[0];
+        var lastItem = tab[tab.length - 1];
+        function affiche(tab) {
+
+            function additionne(x) {
+                return x + 2;
+            };
+
+            alert(additionne(firstItem));
+            alert(additionne(lastItem));
+        };
+
+    </script>
+
+</body>
+
+</html>

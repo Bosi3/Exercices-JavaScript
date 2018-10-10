@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin: 30px; 
+     }
+     #mon_div {
+    width: 0;
+    height: 0;
+    background-color: coral;
+    color: white;
+}
+
+ </style>
+
+<body>
+    <button class="btn1" type="submit" onclick=" surfaceRectagle()" ;>Calculer la surface d'un rectangle</button>
+    <div id="mon_div" class="rectangle">
+    </div>
+    <button class="btn2" type="submit" onclick=" periRectangle()" ;>Calculer  le périmètre  d'un rectangle</button>
+    <div id="mon_div2" class="rectangle">
+    </div>
+
+    <p id=""></p>
+    <script type="text/javascript">
+        //Exercice 1 - écriture d'une fonction
+        function surfaceRectagle() {
+            var maLarg = prompt(" Ecrivez une largeur:");
+            var maLong = prompt(" Ecrivez une longueur:");
+            document.getElementById("mon_div").style.backgroundColor = "#8A2BE2";
+            document.getElementById("mon_div").style.width = maLarg + "px";
+            document.getElementById("mon_div").style.height = maLong + "px";          
+        };
+        function periRectangle(){
+            var maLarg2 = prompt(" Ecrivez une largeur:");
+            var maLong2 = prompt(" Ecrivez une longueur:");
+            var peri =  (parseFloat(maLarg2) + parseFloat(maLong2))*2;
+            document.getElementById("mon_div2").innerHTML = "Le périmètre  du rectangle est " + peri  ;
+        };
+
+
+
+    </script>
+
+</body>
+
+</html>
