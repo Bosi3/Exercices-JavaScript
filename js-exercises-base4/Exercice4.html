@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" onclick="myFunction()" >Vérification</button>
+  </form>
+    <script type="text/javascript">
+        //Exercice 4
+        function myFunction() {
+        var pass1 = document.getElementById("motdepasse").value;
+        var pass2 = document.getElementById("confirmation").value;
+        if (pass1 != pass2) {
+            //alert("Passwords Do not match");
+            document.getElementById("motdepasse").style.borderColor = "red";
+            document.getElementById("confirmation").style.borderColor = "red";
+        }
+        else {
+            document.getElementById("motdepasse").style.borderColor = "green";
+            document.getElementById("confirmation").style.borderColor = "green";
+        }
+        }
+/*Dans le fichier HTML fourni, mettre les bordures des inputs en rouge 
+si les mots de passe sont différents. Sinon les mettre en vert.*/
+    </script>
+</body>
+
+</html>
