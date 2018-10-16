@@ -5,6 +5,7 @@
  */
 var tailleString = function (str) {
 
+
     {
         var id = this.task.get("id");
 
@@ -16,12 +17,10 @@ var tailleString = function (str) {
 };
 
 var remplaceECar = function (str) {
-    // Remplacer le premier e de la chaine par un espace
-    // str= returnValue(/^c/, /^\s/);
-    //expect(str).toEqual(str);
-    if(str){
-     return str.replace(/e/, " ");
-     }
+
+    if (str) {
+        return str.replace(/e/, " ");
+    }
 
     // var res = str.replace(/^/, );
 }
@@ -34,9 +33,9 @@ var afficherCar5 = function (str) {
     }
 }
 var afficher9Car = function (str) {
-if(str){
-    return str.substr(0, 9);
-}
+    if (str) {
+        return str.substr(0, 9);
+    }
 }
 var majusculeString = function (str) {
 
@@ -49,43 +48,80 @@ var minusculeString = function (str) {
         return str.toLowerCase();
     }
 }
-var SupprEspaceString = function (texte) {
-
+var SupprEspaceString = function (str) {
+    if (str) {
+        return str.trim();
+    }
 }
-var IsString = function (texte) {
-
+var IsString = function (str) {
+    if (typeof str === 'string') {
+        // Faire quelque chose
+        return true;
+    }
 }
 
-var AfficherExtensionString = function (texte) {
-
+var AfficherExtensionString = function (str) {
+    if (str) {
+        return str.split('.').reverse()[0];
+    }
 }
-var NombreEspaceString = function (texte) {
 
+var NombreEspaceString = function (str) {
+    if (str) {
+        return str.split(' ').length - 1;
+    }
 }
-var InverseString = function (texte) {
-
+var InverseString = function (str) {
+    if (str) {
+        return str.split('').reverse().join('');
+    }
 }
 
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
 var calculPuissance = function (x, y) {
-
+    if (x, y) {
+        return Math.pow(x, y)
+    }
 }
-var valeurAbsolue = function (result) {
-    expect(Math.abs).toEqual(5);
+var valeurAbsolue = function (x) {
+    if (x) {
+        return Math.abs(x);
+    }
 }
-var valeurAbsolueArray = function (array) {
-
+var valeurAbsolueArray = function (arr) {
+    var dups = [];
+    for (var i = 0; i < arr.length; i++) {
+        var el = arr[Math.abs(arr[i])];
+        if (el > 0) { arr[Math.abs(arr[i])] = -arr[Math.abs(arr[i])]; }
+        else if (el === 0) { arr[Math.abs(arr[i])] = -arr.length; }
+        else {
+            if (Math.abs(arr[i]) === arr.length) { dups.push(0); }
+            else { dups.push(Math.abs(arr[i])); }
+        }
+    }
+    return dups;
 }
-var sufaceCercle = function (rayon) {
 
+
+var sufaceCercle = function (r) {
+    if (r) {
+        var ry = Math.PI * (r * r);
+        return Math.ceil(ry);
+    }
 }
 var hypothenuse = function (ab, ac) {
-
+    if (ab, ac) {
+        return Math.hypot(ab, ac);
+    }
 }
 var calculIMC = function (poids, taille) {
-
+    if (poids, taille) {
+        var imc = (parseFloat((poids / (taille * taille))));
+        var fix = parseFloat(imc).toFixed(2);
+        return Number(fix);
+    }
 }
 /*Important
 Il faut lancer le fichier SpecRunner.html pour valider ses réponses.
