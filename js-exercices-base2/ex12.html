@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+        button{
+        margin: 10px; 
+        padding: 3px;
+     }       
+     </style>
+<body>
+    <button class="btn1" type="submit" onclick=" conversionTemperature()" ;>Conversion Temperature</button>
+    <div id="mon_div" class="rectangle">
+    </div>
+    <ol class="listConvertion" style="visibility: hidden">
+        <li><button onclick="endList()">Fin du programme</button></li>
+        <li><button onclick="celiciusToFahrenheit()">De Celsius vers Fahrenheit</button></li>
+        <li><button onclick="celiciusToKelvin()">De Celsius vers Kelvin</button></li>
+        <li><button onclick="fahrenheitToCelcius()">De Fahrenheit vers Celsius</button></li>
+        <li><button onclick="fahrenheitToKelvin()">De Fahrenheit vers Kelvin</button></li>
+        <li><button onclick="kelvinToCelcius()">De Kelvin vers Celsius</button></li>
+        <li><button onclick="kelvinToFahrenheit()">De Kelvin vers Fahrenheit</button></li>
+    </ol>
+    <script type="text/javascript">
+
+// Exercice 12 - Conversion de température Celsius, Fahrenheit et Kelvin
+let fahrenheit = 0;
+let celcius = 0;
+let kelvin = 0;
+
+function conversionTemperature() {
+    let convertionShow = document.querySelector(".listConvertion");
+    convertionShow.style.visibility = "visible";
+}
+function endList() {
+    let convertionShow = document.querySelector(".listConvertion");
+    convertionShow.style.visibility = "hidden";
+}
+
+function celiciusToFahrenheit() {
+    celcius = prompt("Entrez un degres Celcius")
+    fahrenheit = (celcius * 9 / 5) + 32;
+    alert(fahrenheit);
+}
+
+function celiciusToKelvin() {
+    celcius = prompt("Entrez un degres Celcius");
+    kelvin = celcius + 273.15;
+    alert(kelvin);
+}
+
+function fahrenheitToCelcius() {
+    fahrenheit = prompt("Entrez un degres Celcius")
+    celcius = (fahrenheit * 1.8) + 32;
+    alert(celcius);
+}
+
+function fahrenheitToKelvin() {
+    fahrenheit = prompt("Entrez un degres Celcius")
+    kelvin = (fahrenheit + 459, 67) / 1, 8;
+    alert(kelvin);
+}
+
+function kelvinToCelcius() {
+    kelvin = prompt("Entrez un degres Celcius")
+    celcius = kelvin - 273, 15;
+    alert(celcius);
+}
+
+function kelvinToFahrenheit() {
+    kelvin = prompt("Entrez un degres Celcius")
+    fahrenheit = (kelvin * 1, 8) - 459, 67;
+    alert(fahrenheit);
+}
+
+    </script>
+
+</body>
+
+</html>
