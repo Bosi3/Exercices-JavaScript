@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>   
+</head>
+<style>
+        button{
+        margin: 10px; 
+        padding: 3px;
+     }       
+     </style>
+<body>
+    <button class="btn1" type="submit" onclick="calculMoyenne()" ;>test Moyenne</button>
+    <div id="mon_div" >
+    </div>
+    <p id="summe"></p>
+    <script type="text/javascript">
+
+        // Exercice 11 - utilisation des boucles et tests
+        let somme = 0;
+        let maVal = 0;
+        function calculMoyenne() {
+            let myNbr = prompt("Entrez un nombre entier");
+            let nbrInt = parseFloat(myNbr);
+
+            if (Number.isInteger(nbrInt)) {
+                if (nbrInt > 0) {
+                    somme += nbrInt;
+                    maVal++;
+                    calculMoyenne();
+                } else {
+                    somme /= maVal;
+                    alert("La moyenne : " + somme)
+                } 
+            } else {
+                alert(nbrInt + " is not integer");
+                calculMoyenne();
+            }   
+        }
+/*
+let sommeFinal2 = 0;
+let enterValue = 0;
+function calculMoyenne() {
+    let nbEntier = prompt("Entrez un nombre entier");
+    let nbEntertoInt = parseFloat(nbEntier);
+
+    if (Number.isInteger(nbEntertoInt)) {
+        if (nbEntertoInt > 0) {
+            sommeFinal2 += nbEntertoInt;
+            console.log(sommeFinal2);
+            enterValue++;
+            calculMoyenne();
+
+        } else {
+            sommeFinal2 /= enterValue;
+            alert("La moyenne : " + sommeFinal2)
+        }
+    } else {
+        alert(nbEntertoInt + " is not integer");
+        calculMoyenne();
+    }
+
+}
+Créer un bouton. Au click de ce bouton, lancer la fonction calculMoyenne.
+Cette fonction va calculer la moyenne des nombres entrés au clavier :
+demande à l'utilisateur d'entrer un nombre entier.
+si l'utilisateur entre autre chose qu'un nombre entier, un message d'alerte signale l'erreur et ensuite, la fonction redemande à l'utilisateur d'entrer un nombre entier.
+tant que le nombre entré est positif ou nul, la fonction mémorise ce nombre et l'additionne aux autres nombres précédemment entrés.
+si le nombre est négatif, alors la fonction calcule la moyenne de tous les nombres entrés en divisant la somme totale par le nombre de valeurs entrées.
+la fonction affiche le nombre de valeurs entrées
+la fonction affiche la moyenne*/
+    </script>
+
+</body>
+
+</html>
