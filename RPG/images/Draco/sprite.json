@@ -1,0 +1,64 @@
+{
+	"objName": "Draco",
+	"scripts": [[20,
+			20,
+			[["whenGreenFlag"],
+				["hide"],
+				["wait:elapsed:from:", 65],
+				["gotoX:y:", -190, -85],
+				["show"],
+				["glideSecs:toX:y:elapsed:from:", 10, 185, -85],
+				["hide"]]],
+		[24,
+			191,
+			[["whenGreenFlag"],
+				["wait:elapsed:from:", 65],
+				["say:duration:elapsed:from:", "hello.  i'm malfoy, draco malfoy.  crabbe and goyle are temporarily missing.", 4],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "u'll find that some wizarding families r better than others.", 3.5],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "i can help u there...um...or not...", 2.5]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "b7e80133f1adac63faf34d585de2fc44.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 44,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume2",
+			"baseLayerID": 1,
+			"baseLayerMD5": "146df0793aecd3c6944c5518abf5ddc6.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 61,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume3",
+			"baseLayerID": 2,
+			"baseLayerMD5": "17a27bcdb1be5e089c9de0292ff0e45a.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 75,
+			"rotationCenterY": 83
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1.0000000002328306,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

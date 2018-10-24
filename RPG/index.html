@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+
+	<meta charset="UTF-8">
+
+	<title>Mini-RPG</title>
+</head>
+
+<body >
+	<canvas id="canvas"  style="border:1px solid whitesmoke;">Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
+	<!--<canvas id="canvas" width=600 height=400 /> -->
+	
+
+
+	<div id="fond">
+		<!--<div class="test">cliked</div>-->
+		<div class="conteneur">
+
+			<img src="images/kiosk.png" id="image1" />
+			<div id="kiosk">
+				<!--<svg class="svgClass" type="image/svg+xml"  width="200" height="100"><image xlink:href="images/bag1.svg" ></svg>-->
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/bag1.svg  "  ></svg>
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/scopa.svg "  ></svg>
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/hat1.svg "  ></svg>
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/baton.svg "  ></svg>
+			</div>
+			
+			<div id="player">
+				<svg class="svgClass" name= "Hermionie" id= "Hermi" type= "image/svg+xml"><image xlink:href= "images/Hermionie/0.svg " ></image></svg> 
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/Dumbledore1/0.svg" ></image> </svg>
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/Harry1/0.svg"  ></image> </svg>
+
+			</div>
+			<div id="monster">
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/Bellatrix/0.svg"  ></image> </svg>
+				<svg class="svgClass" type="image/svg+xml"><image xlink:href= "images/Voldemort1/0.svg"  ></image> </svg>
+
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/classes/Tileset.js"></script>
+	<script src="script.js" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="script.js" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+</body>
+
+</html>

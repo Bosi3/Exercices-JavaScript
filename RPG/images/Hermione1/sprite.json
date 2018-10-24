@@ -1,0 +1,65 @@
+{
+	"objName": "Hermione",
+	"scripts": [[29,
+			230,
+			[["whenGreenFlag"],
+				["wait:elapsed:from:", 25],
+				["say:duration:elapsed:from:", "hello.  i'm hermione granger...and, you are? pleasure.  i'm going to change into my next robes...", 5],
+				["nextCostume"],
+				["wait:elapsed:from:", 1.5],
+				["say:duration:elapsed:from:", "and again...", 1],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "well...c u at skool...i need 2 practice...", 2.5]]],
+		[20,
+			20,
+			[["whenGreenFlag"],
+				["hide"],
+				["wait:elapsed:from:", 25],
+				["gotoX:y:", -190, -85],
+				["show"],
+				["glideSecs:toX:y:elapsed:from:", 10, 185, -85],
+				["hide"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "83a023612750c4e451c96eed823e5666.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 44,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume2",
+			"baseLayerID": 1,
+			"baseLayerMD5": "37b303aa237e9a607ed6771b544377cc.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 61,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume3",
+			"baseLayerID": 2,
+			"baseLayerMD5": "380bd9db25226678aa031f6511a3a35a.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 73,
+			"rotationCenterY": 83
+		}],
+	"currentCostumeIndex": 2,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1.0000000002328306,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

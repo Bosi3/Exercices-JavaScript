@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+	<script type="text/javascript" src="js/classes/Tileset.js"></script>
+	
+	<script src="script3.js" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<meta charset="UTF-8">
+
+	<title>Mini-RPG</title>
+</head>
+
+<body>
+	<canvas id="canvas">Votre navigateur ne supporte pas HTML5, veuillez le mettre à jour pour jouer.</canvas>
+	<!--<canvas id="canvas" width=600 height=400 /> -->
+	<div id="fond">
+		<div class="conteneur">
+
+			<img src="images/kiosk.png" id="image1" />
+			<div id="kiosk">
+				<object type="image/svg+xml" data="images/bag1.svg" width="200" height="100"></object>
+				<object type="image/svg+xml" data="images/baton.svg" width="200" height="100"></object>
+				<object type="image/svg+xml" data="images/scopa.svg" width="200" height="100"></object>
+				<object type="image/svg+xml" data="images/hat1.svg" width="200" height="100"></object>
+			</div>
+		</div>
+		<div class="conteneur">
+			<div id="player">
+				<object type="image/svg+xml" data="images/Hermionie/0.svg" width="200" height="100"></object>
+				<object type="image/svg+xml" data="images/Dumbledore1/0.svg" width="200" height="100"></object>
+				<object type="image/svg+xml" data="images/Harry1/0.svg" width="200" height="100"></object>
+
+			</div>
+			<div id="monster">
+				<object type="image/svg+xml" data="images/Bellatrix/0.svg" width="200" height="100"></object>
+				<object type="image/svg+xml" data="images/Voldemort1/0.svg" width="200" height="100"></object>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

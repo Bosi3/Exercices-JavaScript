@@ -1,0 +1,31 @@
+{
+	"objName": "Voldemort",
+	"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "costume2",
+			"baseLayerID": 0,
+			"baseLayerMD5": "9bb86c348136fe855008f8273d821047.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 90,
+			"rotationCenterY": 148
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

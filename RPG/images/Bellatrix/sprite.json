@@ -1,0 +1,30 @@
+{
+	"objName": "Bellatrix",
+	"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+		[129, 10, [["whenSceneStarts", "backdrop2"], ["hide"]]],
+		[366,
+			10,
+			[["whenGreenFlag"],
+				["doForever",
+					[["doIf", ["keyPressed:", "right arrow"], [["show"]]],
+						["doIf", ["keyPressed:", "left arrow"], [["hide"]]]]]]]],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "a1f0ad768bcd04ec1e2f3449891fe790.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 125,
+			"rotationCenterY": 143
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 0.55,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

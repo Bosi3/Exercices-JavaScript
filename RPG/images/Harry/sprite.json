@@ -1,0 +1,57 @@
+{
+	"objName": "Harry",
+	"scripts": [[95,
+			193,
+			[["whenGreenFlag"],
+				["wait:elapsed:from:", 5],
+				["say:duration:elapsed:from:", "hello!  i'm harry potter.  i have 3 costumes.  this one...", 4],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "and this one...and, finally...", 3],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "this one!", 1],
+				["say:duration:elapsed:from:", "well, thats me!", 2]]],
+		[96,
+			38,
+			[["whenGreenFlag"],
+				["hide"],
+				["wait:elapsed:from:", 5],
+				["gotoX:y:", -190, -85],
+				["show"],
+				["glideSecs:toX:y:elapsed:from:", 10, 185, -85],
+				["hide"]]]],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "bf0e9e212222890a2009bd8815783b0d.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 44,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume3",
+			"baseLayerID": 1,
+			"baseLayerMD5": "dc9629a57c2e76737fd9a355058f3857.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 66,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume2",
+			"baseLayerID": 2,
+			"baseLayerMD5": "8d12937e949d134ee5828681a14af5d8.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 61,
+			"rotationCenterY": 83
+		}],
+	"currentCostumeIndex": 2,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1.0000000002328306,
+	"direction": 90,
+	"rotationStyle": "none",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

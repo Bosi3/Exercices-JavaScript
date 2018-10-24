@@ -1,0 +1,31 @@
+{
+	"objName": "Harry Potter",
+	"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]]],
+	"sounds": [{
+			"soundName": "meow",
+			"soundID": 0,
+			"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+			"sampleCount": 18688,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "costume2",
+			"baseLayerID": 0,
+			"baseLayerMD5": "e396abff61c7314c14d92d8b0a2c1c4c.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 81,
+			"rotationCenterY": 151
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

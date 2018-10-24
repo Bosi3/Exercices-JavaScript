@@ -1,0 +1,64 @@
+{
+	"objName": "Voldemort",
+	"scripts": [[20,
+			20,
+			[["whenGreenFlag"],
+				["hide"],
+				["wait:elapsed:from:", 95],
+				["gotoX:y:", -190, -85],
+				["show"],
+				["glideSecs:toX:y:elapsed:from:", 10, 185, -85],
+				["hide"]]],
+		[21,
+			193,
+			[["whenGreenFlag"],
+				["wait:elapsed:from:", 95],
+				["say:duration:elapsed:from:", "i am voldemort!", 1.25],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "do not call me dumblemort, or voldydore, or tom marvolo riddle, or anything of the sort.  ", 5.5],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "if u do...fear my wrath (avada kedavra is my specialty)", 3.25]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "6d7d093aa592c75ed39fbd6192e243c6.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 44,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume2",
+			"baseLayerID": 1,
+			"baseLayerMD5": "bd87d1874f776fed0192a505071a9b83.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 55,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume3",
+			"baseLayerID": 2,
+			"baseLayerMD5": "28e07effc356b8bd66995c56ff5fe19b.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 73,
+			"rotationCenterY": 83
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1.0000000002328306,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

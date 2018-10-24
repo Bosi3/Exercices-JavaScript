@@ -1,0 +1,64 @@
+{
+	"objName": "Dumbledore",
+	"scripts": [[20,
+			20,
+			[["whenGreenFlag"],
+				["hide"],
+				["wait:elapsed:from:", 75],
+				["gotoX:y:", -190, -85],
+				["show"],
+				["glideSecs:toX:y:elapsed:from:", 10, 185, -85],
+				["hide"]]],
+		[21,
+			198,
+			[["whenGreenFlag"],
+				["wait:elapsed:from:", 75],
+				["say:duration:elapsed:from:", "i'm professor dumbledore", 2],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "u can trust me, don't worry...i'm benelovent...", 3],
+				["nextCostume"],
+				["say:duration:elapsed:from:", "but that doensn't necessarily mean i'm not ready 2 defend myself!  run along, now...", 5]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "9a3dfa26fcee8c7cf56b44e49a8df5bd.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 44,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume2",
+			"baseLayerID": 1,
+			"baseLayerMD5": "cab4405ac737667233e4ff917834e380.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 45,
+			"rotationCenterY": 83
+		},
+		{
+			"costumeName": "costume3",
+			"baseLayerID": 2,
+			"baseLayerMD5": "e7a7a865a81421e08f72f877c3c4d756.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 79,
+			"rotationCenterY": 83
+		}],
+	"currentCostumeIndex": 2,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1.0000000002328306,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

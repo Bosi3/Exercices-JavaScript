@@ -1,0 +1,30 @@
+{
+	"objName": "Hermionie",
+	"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+		[10, 10, [["whenSceneStarts", "backdrop2"], ["show"]]],
+		[113,
+			71,
+			[["whenGreenFlag"],
+				["doForever",
+					[["doIf", ["keyPressed:", "right arrow"], [["hide"]]],
+						["doIf", ["keyPressed:", "left arrow"], [["show"]]]]]]]],
+	"costumes": [{
+			"costumeName": "costume1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "2d4346dd234069f7f09bb98eabbc851d.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 125,
+			"rotationCenterY": 143
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 0.55,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}
