@@ -30,7 +30,11 @@ var removeNullAndFalseElements = function(arr, val) {
 
 
 var reverseWordsInArray = function(str) {
+<<<<<<< HEAD
     return str === str.split('').reverse().join('');
+=======
+    return  str.split('').reverse().join('');
+>>>>>>> 54a4ce0f2ee389c9306e0ebdda22b4a7446f825b
 }
 
 var everyPossiblePair = function(arr) {
@@ -78,10 +82,16 @@ var makeNegative = function(num) {
     //return 'Write your method here';
 }
 
+<<<<<<< HEAD
 var numberOfPalindromes = function(s){ 
     let count = 0; for(let i=0, j=string.length-1; i<j; ) 
     if(string.charAt(i++) === string.charAt(j--)) ++count; 
     return count; 
+=======
+var numberOfPalindromes = function(str) { 
+    var str = str.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
+    return str == str.split('').reverse().join('');
+>>>>>>> 54a4ce0f2ee389c9306e0ebdda22b4a7446f825b
 }
 
     
@@ -105,9 +115,22 @@ var sumNumbers = function(array) {
 
 var repeatElements = function(arr) {
     var arr1 =arr.concat(arr);
+<<<<<<< HEAD
+return arr1;
+    }
+=======
+
+>>>>>>> 54a4ce0f2ee389c9306e0ebdda22b4a7446f825b
+
 return arr1;
     }
 
+
+
+//return(duplicate(arr))
+
+ 
+//}   
 var stringToNumber = function(string) {
     
     return parseInt(string);
