@@ -30,7 +30,7 @@ var removeNullAndFalseElements = function(arr, val) {
 
 
 var reverseWordsInArray = function(str) {
-    return  str.split('').reverse().join('');
+    return str === str.split('').reverse().join('');
 }
 
 var everyPossiblePair = function(arr) {
@@ -78,9 +78,10 @@ var makeNegative = function(num) {
     //return 'Write your method here';
 }
 
-var numberOfPalindromes = function(str) { 
-    var str = str.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
-    return str == str.split('').reverse().join('');
+var numberOfPalindromes = function(s){ 
+    let count = 0; for(let i=0, j=string.length-1; i<j; ) 
+    if(string.charAt(i++) === string.charAt(j--)) ++count; 
+    return count; 
 }
 
     
@@ -192,19 +193,51 @@ var checkForSpecialCharacters = function(string) {
 }
 
 var squareRoot = function(number) {
-    return 'Write your method here';
+    return Math.sqrt(number);
 }
 
-var factorial = function(number) {
-    return 'Write your method here';
+var factorial = function(num) {
+    if(num === 0 || num === 1){
+        return 1;
+        }
+        for(var i = num -1; i >= 1; i--){
+        num = num * i;
+        }
+        return num;
 }
 
-var findAnagrams = function(string) {
-    return 'Write your method here';
+var findAnagrams = function(str) {
+    if (!str) {
+        return;
+    }
+    str = str.split('');
+    str = str.sort();
+    str = str.join('');
+    return str;
 }
 
-var convertToCelsius = function(number) {
-    return 'Write your method here';
+
+
+function getGroupedAnagrams(words){
+    const anagrams = {}; // {abc:[abc,cba], dell:[dell, ledl]}
+    words.forEach((word)=>{
+        const sortedWord = sortStrChars(word);
+        if (anagrams[sortedWord]) {
+            return anagrams[sortedWord].push(word);
+        }
+        anagrams[sortedWord] = [word];
+    });
+    return anagrams;
+
+}
+
+
+
+
+var convertToCelsius = function(valNum) {
+    valNum = parseFloat(valNum);
+    return Math.round((valNum-32) / 1.8);
+     
 }
 
 var letterPosition = function(array) {
